@@ -119,3 +119,37 @@ floatingActionButton:FloatingActionButton(
 
 > - ແມ່ນການລິ້ງ ຈາກໜ້າໜຶ່ງ ໄປຫາອີກ ໜ້າໜຶງ
 > - ຕົວຢ່າງ: dartເວລາກົດປຸ່ມ floating ທີ່ມີເຄືອງໜາມບວກ(+) ຈາກນັ້ນໃຫ້ເປິດໜ້າ new_screen ຂື້ນມາທັນທີ່ ໃນໜ້າ new_screen ໃຫ້ໃສ້ຫົວຂໍ້ appBer ຊື່ວ່າ New Screen ກຳນົດສີເປັນ appBar ໃຫ້ເປັນສີຂຽວ, ສ່ວນເນື້ອໃນ ໃຫ້ຂຽນວ່າ 'Welcome to New Screen'
+
+### 2.8 ການສະແດງປະຕິທິນ (Calender)
+
+> ຕົວຢ່າງ : ເວລາກົດປ່ມຊື່ວ່າ Choose Date ໃຫ້ສະແດງປະຕິທິນຂື້ນມາ
+
+### 2.9 ການສະແດງວັນເວລາປັດຈຸບັນ (curdatetime.dart)
+
+> ໃຫ້ສ້າງຟາຍໃຫມ່ ກຳນົດຊື່ຟາຍເປັນ curdatetime.dart
+
+### 2.10 ການກົດປຸ່ມ (Button)
+
+> ມີປຸ່ມ :
+>
+> - TextButton
+> - ElevatedButton
+> - OutlinedButton
+> - FloatingActionButton
+
+> ຕົວຢ່າງ
+
+```dart
+body: Center(
+    child: Column(children: [
+        TextButton(
+            child: Text('click Me'),
+            onPressed: () {
+                prtint("Hi evening....");
+            }
+        )
+    ])
+)
+```
+
+> ໃນສ້າງຟາຍໃຫມ່ກຳນົດຊື່ເປັນ buttons.dart

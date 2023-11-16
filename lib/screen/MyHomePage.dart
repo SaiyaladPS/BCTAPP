@@ -22,11 +22,20 @@ class _MyHomePageState extends State<MyHomePage> {
         // ignore: avoid_unnecessary_containers
         child: Container(
           child: Column(children: [
-            const Center(
+            Center(
               child: Text(
-                "Count Number",
+                "Count Number ${number.toString()}",
                 style: TextStyle(fontSize: 20, color: Colors.red),
               ),
+            ),
+            ElevatedButton.icon(
+              label: Text("Add"),
+              onPressed: () {
+                setState(() {
+                  number++;
+                });
+              },
+              icon: Icon(Icons.add),
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
@@ -36,27 +45,43 @@ class _MyHomePageState extends State<MyHomePage> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(4.0))),
               onPressed: () {
-                Navigator.pushNamed(context, AppRouter.newscreen);
+                Navigator.pushNamed(context, AppRouter.curdatetime);
               },
               child: const Text(
-                "New Screen",
+                "Chooose Date",
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
-                    fontSize: 20),
+                    fontSize: 19),
               ),
             ),
-            Text(number.toString()),
+            Text("Net"),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 10.0, horizontal: 30.0),
+                  backgroundColor: Colors.red[300],
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(4.0))),
+              onPressed: () {
+                Navigator.pushNamed(context, AppRouter.button);
+              },
+              child: const Text(
+                "Button",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 19),
+              ),
+            ),
           ]),
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          setState(() {
-            number++;
-          });
+          Navigator.pushNamed(context, AppRouter.newscreen);
         },
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.arrow_forward_ios),
       ),
     );
   }
