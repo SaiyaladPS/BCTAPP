@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:bct/screen/MyHomePage.dart';
 import 'package:bct/screen/buttons.dart';
 import 'package:bct/screen/curdatetime.dart';
