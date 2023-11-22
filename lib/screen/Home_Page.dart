@@ -28,52 +28,39 @@ class _HomePageState extends State<HomePage> {
                   borderRadius:
                       BorderRadius.only(topLeft: Radius.circular(100))),
               child: GridView.count(
-                shrinkWrap: true,
-                crossAxisCount: 2,
-                physics: const NeverScrollableScrollPhysics(),
-                crossAxisSpacing: 40,
-                mainAxisSpacing: 40,
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.pushNamed(context, AppRouter.button);
-                    },
-                    child: Charbox(
-                        title: "Videos",
-                        icons: CupertinoIcons.play_rectangle,
-                        background: Colors.deepOrange),
-                  ),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.pushNamed(context, AppRouter.list);
-                    },
-                    child: Charbox(
-                        title: "Videos",
-                        icons: CupertinoIcons.play_rectangle,
-                        background: Colors.deepOrange),
-                  ),
-                  Charbox(
-                      title: "Videos",
-                      icons: CupertinoIcons.play_rectangle,
-                      background: Colors.deepOrange),
-                  Charbox(
-                      title: "Videos",
-                      icons: CupertinoIcons.play_rectangle,
-                      background: Colors.deepOrange),
-                  Charbox(
-                      title: "Videos",
-                      icons: CupertinoIcons.play_rectangle,
-                      background: Colors.deepOrange),
-                  Charbox(
-                      title: "Videos",
-                      icons: CupertinoIcons.play_rectangle,
-                      background: Colors.deepOrange),
-                  Charbox(
-                      title: "Videos",
-                      icons: CupertinoIcons.play_rectangle,
-                      background: Colors.deepOrange),
-                ],
-              ),
+                  shrinkWrap: true,
+                  crossAxisCount: 2,
+                  physics: const NeverScrollableScrollPhysics(),
+                  crossAxisSpacing: 40,
+                  mainAxisSpacing: 40,
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, AppRouter.button);
+                      },
+                      child: Charbox(
+                          title: "Home",
+                          icons: CupertinoIcons.home,
+                          background: Colors.deepOrange),
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, AppRouter.list);
+                      },
+                      child: Charbox(
+                          title: "List",
+                          icons: CupertinoIcons.list_bullet,
+                          background: Colors.red),
+                    ),
+                    GestureDetector(
+                      onTap: () {},
+                      child: Charbox(
+                        title: "Button",
+                        icons: CupertinoIcons.at_circle_fill,
+                        background: Colors.green,
+                      ),
+                    )
+                  ]),
             ),
           )
         ],

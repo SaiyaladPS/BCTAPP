@@ -23,7 +23,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
         ListTile(
           contentPadding: EdgeInsets.symmetric(horizontal: 30),
           title: Text(
-            "Hi Jay",
+            "ສະບາຍດີເຈ",
             style: Theme.of(context)
                 .textTheme
                 .headlineSmall
